@@ -1,3 +1,8 @@
+## OS command injection
+1. <b>OS command injection, simple case</b> - Go to `https://xxxx.web-security-academy.net/product?productId=x` and start intercepting from burp while pressing the check stock button. Send it to repeater and chain the `whoami` command at the end of productId=x `productId=333;whoami&storeId=1`
+2. <b>Blind OS command injection with time delays</b> - 
+
+
 ## File upload vulnerabilities
 1. <b>Remote code execution via web shell upload</b> - Try to upload just a php script with .php extension
 2. <b>Web shell upload via Content-Type restriction bypass</b> - Try to change <b>content-type</b> from x-php to <b>image/png</b>
