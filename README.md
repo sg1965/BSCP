@@ -1,6 +1,11 @@
 ## Server-side request forgery (SSRF)
 1. <b>Basic SSRF against the local server</b> - Go to one product from the home page and press `check stock`(intercept it with burp) send it to repeater and you will find a parameter named `stockApi` which has a url. In this url if we put `http://localhost/admin` and send the request we will see the admin panel. To solve this lab we have to put in `stockApi` param `http://localhost/admin/delete?username=carlos`
 2. <b>Basic SSRF against another back-end system</b> - 
+3. <b>SSRF with blacklist-based input filter</b> - 
+4. <b>SSRF with filter bypass via open redirection vulnerability</b> - 
+5. <b>Blind SSRF with out-of-band detection</b> - 
+6. <b>SSRF with whitelist-based input filter</b> - 
+7. <b>Blind SSRF with Shellshock exploitation</b> - 
 
 ## OS command injection
 1. <b>OS command injection, simple case</b> - Go to `https://xxxx.web-security-academy.net/product?productId=x` and start intercepting from burp while pressing the check stock button. Send it to repeater and chain the `whoami` command at the end of productId=x `productId=333;whoami&storeId=1`
