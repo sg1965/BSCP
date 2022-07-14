@@ -3,7 +3,7 @@
 2. <b>Basic SSRF against another back-end system</b> - 
 3. <b>SSRF with blacklist-based input filter</b> - 
 4. <b>SSRF with filter bypass via open redirection vulnerability</b> - 
-5. <b>Blind SSRF with out-of-band detection</b> - 
+5. <b>Blind SSRF with out-of-band detection</b> - Go to home page and press one of products while you intercepting the requests and you will see the `referer` header. After that go to `burp collaborator` and change the `referer` value to http://xxxxx.collaboratorburp.net and the lab is solved. 
 6. <b>SSRF with whitelist-based input filter</b> - 
 7. <b>Blind SSRF with Shellshock exploitation</b> - 
 
