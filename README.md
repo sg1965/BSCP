@@ -4,7 +4,7 @@
 3. <b>SSRF with blacklist-based input filter</b> - 
 4. <b>SSRF with filter bypass via open redirection vulnerability</b> - 
 5. <b>Blind SSRF with out-of-band detection</b> - Go to home page and press one of products while you intercepting the requests and you will see the `referer` header. After that go to `burp collaborator` and change the `referer` value to http://xxxxx.collaboratorburp.net and the lab is solved. 
-6. <b>SSRF with whitelist-based input filter</b> - 
+6. <b>SSRF with whitelist-based input filter</b> - For this lab we have to get the access to admin panel and delete carlos account but its not the same like the old times. For the solution the first step is to go in one product and press `check stock` and pass this url into to `api parameter` `http://localhost:80%2523@stock.weliketoshop.net/admin/delete?username=carlos`
 7. <b>Blind SSRF with Shellshock exploitation</b> - 
 
 ## OS command injection
