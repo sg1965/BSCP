@@ -1,8 +1,8 @@
 ## Server-side request forgery (SSRF)
 1. <b>Basic SSRF against the local server</b> - Go to one product from the home page and press `check stock`(intercept it with burp) send it to repeater and you will find a parameter named `stockApi` which has a url. In this url if we put `http://localhost/admin` and send the request we will see the admin panel. To solve this lab we have to put in `stockApi` param `http://localhost/admin/delete?username=carlos`
-2. <b>Basic SSRF against another back-end system</b> - 
-3. <b>SSRF with blacklist-based input filter</b> - 
-4. <b>SSRF with filter bypass via open redirection vulnerability</b> - 
+2. <b>Basic SSRF against another back-end system</b> - network pivoting send requests to intruder and `stockApi=http://192.168.0.$ip$:8080/admin` 
+3. <b>SSRF with blacklist-based input filter</b> - `http://127.1/%2561dmin/delete?username=carlos`
+4. <b>SSRF with filter bypass via open redirection vulnerability</b> - `/product/nextProduct?path=http://192.168.0.12:8080/admin/delete?username=carlos`
 5. <b>Blind SSRF with out-of-band detection</b> - Go to home page and press one of products while you intercepting the requests and you will see the `referer` header. After that go to `burp collaborator` and change the `referer` value to http://xxxxx.collaboratorburp.net and the lab is solved. 
 6. <b>SSRF with whitelist-based input filter</b> - For this lab we have to get the access to admin panel and delete carlos account but its not the same like the old times. For the solution the first step is to go in one product and press `check stock` and pass this url into to `api parameter` `http://localhost:80%2523@stock.weliketoshop.net/admin/delete?username=carlos`
 7. <b>Blind SSRF with Shellshock exploitation</b> - Solution for tihs labs is combination of the `Blind SSRF with out-of-band detection` and the `SSRF network pivoting`. First of all we have to intercept a requests when we send a get requests for a product and send it to `intruder` after that we can see `User-Agend` & `Referer` headers so far so good.
