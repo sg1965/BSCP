@@ -1,4 +1,4 @@
-## Server-side request forgery (SSRF)
+## Server-side request forgery (SSRF) ✅
 1. <b>Basic SSRF against the local server</b> - Go to one product from the home page and press `check stock`(intercept it with burp) send it to repeater and you will find a parameter named `stockApi` which has a url. In this url if we put `http://localhost/admin` and send the request we will see the admin panel. To solve this lab we have to put in `stockApi` param `http://localhost/admin/delete?username=carlos`
 2. <b>Basic SSRF against another back-end system</b> - network pivoting send requests to intruder and `stockApi=http://192.168.0.$ip$:8080/admin` 
 3. <b>SSRF with blacklist-based input filter</b> - `http://127.1/%2561dmin/delete?username=carlos`
@@ -16,7 +16,7 @@ For exploitation part:<br>
 2. <b>Blind OS command injection with time delays</b> - 
 
 
-## File upload vulnerabilities
+## File upload vulnerabilities ✅
 1. <b>Remote code execution via web shell upload</b> - Try to upload just a php script with .php extension
 2. <b>Web shell upload via Content-Type restriction bypass</b> - Try to change <b>content-type</b> from x-php to <b>image/png</b>
 3. <b>Web shell upload via path traversal</b> - Change the <b>filename</b> from burpsuite intercept to <b>..%2fget_flag.php</b> and get the flag to /files/avatars/../get_flag.php
