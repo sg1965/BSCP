@@ -16,6 +16,14 @@ For exploitation part:<br>
 2. <b>Blind OS command injection with time delays</b> - 
 
 
+## HTTP Host header attacks
+1. <b>Basic password reset poisoning</b> - 
+2. <b></b> - 
+3. <b></b> - 
+4. <b></b> - 
+5. <b></b> - 
+6. <b></b> - 
+
 ## File upload vulnerabilities ✅
 1. <b>Remote code execution via web shell upload</b> - Try to upload just a php script with .php extension
 2. <b>Web shell upload via Content-Type restriction bypass</b> - Try to change <b>content-type</b> from x-php to <b>image/png</b>
