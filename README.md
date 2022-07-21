@@ -17,8 +17,14 @@ For exploitation part:<br>
 
 
 ## HTTP Host header attacks
-1. <b>Basic password reset poisoning</b> - 
-2. <b></b> - 
+1. <b>Basic password reset poisoning</b> - To solve this lab first of all we have to use the "forgot the password" functionality.<br>
+Go to login page and click "forgot the password" <br>
+Go to the exploit server and open the email client. Observe that you have received an email containing a link to reset your password. Notice that the URL contains the query parameter `temp-forgot-password-token.` <br>
+Click the link and change your password to what ever but first you have to intercept the request and send it to repeater <br>
+For the next step you have to change the `HOST` header at your request in repeater to your exploit server url `exploit-xxx.web-security-academy.net` change to username to `carlos` and send the request. <br>
+Go to exploit server and press the button `access log` and you will see a `GET` request with the token for password reset <br>
+The final steps is to go in the first email and press the link for reset password and after that you have to change the token in the url to the new one and change the password to something new.
+2. <b>Host header authentication bypass</b> - 
 3. <b></b> - 
 4. <b></b> - 
 5. <b></b> - 
