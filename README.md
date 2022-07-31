@@ -28,10 +28,10 @@ The final steps is to go in the first email and press the link for reset passwor
 Intercept the get requests to the xxxxx.lab.com/admin and send it to repeater <br>
 Press <b>Send</b> and you will see this message <b>Admin interface only available to local users</b> <br>
 The last step is to change <h>host</b> header value to localhost and send again the reqeusts and after that we will get admin panel access.
+3. <b>Web cache poisoning via ambiguous requests</b> - 
 4. <b></b> - 
 5. <b></b> - 
 6. <b></b> - 
-7. <b></b> - 
 
 ## File upload vulnerabilities ✅
 1. <b>Remote code execution via web shell upload</b> - Try to upload just a php script with .php extension
