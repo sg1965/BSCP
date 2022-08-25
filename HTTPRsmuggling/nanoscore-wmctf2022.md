@@ -25,6 +25,11 @@ We can use the registration form to create a user and login into web app and see
 
 When we successfully login with ur credentials the app will redirect us to `/flag` page but we need administrator permissions to see the content of the page.
  
-Ur big problem it was how we will gain the administrator 
-  
+Ur big problem it was how we will gain the administrator privilages. The first thing which i tried it was if it was possible somehow to decode the cookie and change the values to get the privilages but i failed because the token was secure with a random secret.
 ![need priv](https://user-images.githubusercontent.com/45040001/186714081-9e58a812-e615-4619-9e40-3abdf64d0a4f.png)
+
+### Directory search
+So the next step for me it was the directory enumeration. For directory enumeration i use burp suite pro and i found the `/users` directory
+
+![admin_user](https://user-images.githubusercontent.com/45040001/186720146-dffbb7d6-8142-403b-8f9f-d388f2c83ca1.png) <br>
+At the `/users` directory we can see register users and which user use first registation page and maybe he is the admin and get the flag.
