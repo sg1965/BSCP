@@ -61,6 +61,7 @@ With <b>`<meta>`</b> html tag we can redirect the "victim" to our javascript inj
 
 
 ### Java
+If you have Java Deserialization Scanner burp extension you can do an active scan(pro version only) and maybe you will find something ;) at least exploit it manually with the below tool.
 #### ysoseriar.jar
 payloads about `ysoseriar` <br>
 <b>Dont forget</b> the below payloads requires url encoding after payload are generated
