@@ -1,12 +1,12 @@
 # <img src="https://icons.iconarchive.com/icons/goescat/macaron/1024/burp-suite-icon.png" width=25> BSCP Methodology
 
 ## Table of Contents
-* [Useful Burp extensions](https://github.com/dhmosfunk/BSCP/blob/main/README.md#useful-burp-extensions-some-of-them-requires-burpsuite-pro)
-* [Cross-Site Scripting Section](https://github.com/dhmosfunk/BSCP/blob/main/README.md#cross-site-scripting-section)
-   * [Bypass restrictions method 1](https://github.com/dhmosfunk/BSCP/blob/main/README.md#bypass-restrictions-method-1)
-* [Exploit Server Section](https://github.com/dhmosfunk/BSCP/blob/main/README.md#exploit-server-section)
-  * [Send exploit to victim (Reflected XSS in search bar)](https://github.com/dhmosfunk/BSCP/blob/main/README.md#send-exploit-to-victim-reflected-xss-in-search-bar)
-* [SQL Injection Section](https://github.com/dhmosfunk/BSCP/blob/main/README.md#sql-injection-section)
+* [Useful Burp extensions](#useful-burp-extensions-some-of-them-requires-burpsuite-pro)
+* [Cross-Site Scripting Section](#cross-site-scripting-section)
+   * [Bypass restrictions method 1](#bypass-restrictions-method-1)
+* [Exploit Server Section](#exploit-server-section)
+  * [Send exploit to victim (Reflected XSS in search bar)](#send-exploit-to-victim-reflected-xss-in-search-bar)
+* [SQL Injection Section](#sql-injection-section)
 
 ## Useful Burp extensions (some of them requires burpsuite pro)
 - Hackvertor
