@@ -1,5 +1,12 @@
 # <img src="https://icons.iconarchive.com/icons/goescat/macaron/1024/burp-suite-icon.png" width=25> BSCP Methodology
 
+## Table of Contents
+* Useful Burp extensions
+* Cross-Site Scripting Section
+   * Bypass restrictions method 1
+* Exploit Server Section
+  * Send exploit to victim (Reflected XSS in search bar)
+* SQL Injection Section
 
 ## Useful Burp extensions (some of them requires burpsuite pro)
 - Hackvertor
@@ -12,7 +19,7 @@
 You can find an injection point with some payloads from this repository - [PayloadsAllTheThings XSS Injection](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20Injection)
 
 ### Bypass restrictions method 1
-Sometimes we found a XSS injection point but with some keyword restrictions, so we have to bypass these restrictions with some techniques below.
+Sometimes we found a XSS injection point but with some keyword restrictions, so we have to bypass these restrictions with some techniques like below.
 1. Generate the base64 payload
 
 ```bash
@@ -27,6 +34,7 @@ eval(atob("BASE64-PAYLOAD"))
 
 ## Exploit Server Section
 #### Send exploit to victim (Reflected XSS in search bar)
+With <b>`<meta>`</b> html tag we can redirect the "victim" to our javascript injected search query.
 ```html
 <meta http-equiv="refresh" content='0; URL=https://<LAB_URL>/?search=injection_here' />
 
