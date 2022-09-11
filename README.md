@@ -11,7 +11,7 @@
   * [MySQL](#mysql)
   * [Oracle](#oracle)
   * [SQLite](#sqlite)
-* [Insecure Deserialization](#insecure-deserialization-section)
+* [Insecure Deserialization Section](#insecure-deserialization-section)
   * [Java](#java)
 ## Useful Burp extensions (some of them requires burpsuite pro)
 - Hackvertor
