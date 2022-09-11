@@ -7,6 +7,10 @@
 * [Exploit Server Section](#exploit-server-section)
   * [Send exploit to victim (Reflected XSS in search bar)](#send-exploit-to-victim-reflected-xss-in-search-bar)
 * [SQL Injection Section](#sql-injection-section)
+  * [PostgreSQL](#postgresql)
+  * [MySQL](#mysql)
+  * [Oracle](#oracle)
+  * [SQLite](#sqlite)
 
 ## Useful Burp extensions (some of them requires burpsuite pro)
 - Hackvertor
