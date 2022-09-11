@@ -1,7 +1,7 @@
 # <img src="https://icons.iconarchive.com/icons/goescat/macaron/1024/burp-suite-icon.png" width=25> BSCP Methodology
 
 ## Table of Contents
-* Useful Burp extensions
+* [Useful Burp extensions](https://github.com/dhmosfunk/BSCP/blob/main/README.md#useful-burp-extensions-some-of-them-requires-burpsuite-pro)
 * Cross-Site Scripting Section
    * Bypass restrictions method 1
 * Exploit Server Section
