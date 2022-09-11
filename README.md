@@ -3,7 +3,7 @@
 ## Table of Contents
 * [Useful Burp extensions](https://github.com/dhmosfunk/BSCP/blob/main/README.md#useful-burp-extensions-some-of-them-requires-burpsuite-pro)
 * [Cross-Site Scripting Section](https://github.com/dhmosfunk/BSCP/blob/main/README.md#cross-site-scripting-section)
-   * Bypass restrictions method 1
+   * [Bypass restrictions method 1](https://github.com/dhmosfunk/BSCP/blob/main/README.md#bypass-restrictions-method-1)
 * Exploit Server Section
   * Send exploit to victim (Reflected XSS in search bar)
 * SQL Injection Section
