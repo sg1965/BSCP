@@ -43,3 +43,11 @@ With <b>`<meta>`</b> html tag we can redirect the "victim" to our javascript inj
 ```
 
 ## SQL Injection Section
+
+### PostgreSQL
+
+### MySQL
+
+### Oracle
+
+### SQLite
