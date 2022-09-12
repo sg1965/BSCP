@@ -5,6 +5,7 @@
 * [Cross-Site Scripting Section](#cross-site-scripting-section)
    * [Bypass restrictions method 1](#bypass-restrictions-method-1)
    * [Capture credentials from auto-filled forms](#capture-credentials-from-auto-filled-forms)
+   * [DOM XSS](#dom-xss)
 * [Exploit Server Section](#exploit-server-section)
   * [Send exploit to victim (Reflected XSS in search bar)](#send-exploit-to-victim-reflected-xss-in-search-bar)
 * [SQL Injection Section](#sql-injection-section)
