@@ -24,6 +24,7 @@
 
 
 ## Cross-Site Scripting Section
+When the exam involve XSS for the user part start search about javascript file in the source code or use the [DOM Invader](#dom-xss) into search forms
 You can find an injection point with some payloads from this repository - [PayloadsAllTheThings XSS Injection](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20Injection) <br>
 Also here - [XSS Payloads](http://www.xss-payloads.com/payloads-list.html?a#category=all)
 
