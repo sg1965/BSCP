@@ -51,6 +51,9 @@ Sometimes we use password managers that fill in forms automatically and with thi
 });">
 ```
 
+### DOM XSS
+An awesome google chrome(from borp suite) extension is DOM Invader which you can use it for DOM xss testing
+
 ## Exploit Server Section
 #### Send exploit to victim (Reflected XSS in search bar)
 With <b>`<meta>`</b> html tag we can redirect the "victim" to our javascript injected search query.
