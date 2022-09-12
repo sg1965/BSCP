@@ -53,7 +53,7 @@ Sometimes we use password managers that fill in forms automatically and with thi
 ```
 
 ### DOM XSS
-An awesome google chrome(from borp suite) extension is DOM Invader which you can use it for DOM xss testing
+An awesome google chrome(from burp suite) extension is <b>DOM Invader</b> which you can use it for DOM XSS testing
 
 ## Exploit Server Section
 #### Send exploit to victim (Reflected XSS in search bar)
