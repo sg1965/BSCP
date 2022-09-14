@@ -17,7 +17,7 @@
 * [Insecure Deserialization Section](#insecure-deserialization-section)
   * [Java](#java)
   * [PHP](#php)
-* [HTTP request smuggling Section]()
+* [HTTP request smuggling Section](#http-request-smuggling-section)
 ## Useful Burp extensions (some of them requires burpsuite pro)
 - Hackvertor
 - Copy As Python-Requests
