@@ -17,6 +17,7 @@
 * [Insecure Deserialization Section](#insecure-deserialization-section)
   * [Java](#java)
   * [PHP](#php)
+* [HTTP request smuggling Section]()
 ## Useful Burp extensions (some of them requires burpsuite pro)
 - Hackvertor
 - Copy As Python-Requests
@@ -120,3 +121,8 @@ For more information about payloads and stuff you can find in the ysoserial [off
 
 ### PHP
 [phpggc](https://github.com/ambionics/phpggc)
+
+
+### HTTP request smuggling Section
+
+x
