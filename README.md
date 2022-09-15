@@ -124,5 +124,5 @@ For more information about payloads and stuff you can find in the ysoserial [off
 
 
 ### HTTP request smuggling Section
+For manual exploitation CL.TE TE.CL we can use the [Simple HTTP Smuggler Generator CL.TE TE.CL](https://github.com/dhmosfunk/simple-http-smuggler-generator) 
 
-x
