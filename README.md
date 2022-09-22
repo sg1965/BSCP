@@ -81,6 +81,8 @@ ${alert(1)}
 
 ## SQL Injection Section
 
+[SQL Injection cheat sheet PortSwigger](https://portswigger.net/web-security/sql-injection/cheat-sheet)
+
 ### PostgreSQL
 #### Time Based
 Identify time based
