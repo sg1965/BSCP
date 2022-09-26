@@ -83,6 +83,12 @@ ${alert(1)}
 ## SQL Injection Section
 
 [SQL Injection cheat sheet PortSwigger](https://portswigger.net/web-security/sql-injection/cheat-sheet)
+<br>
+### Labs
+[SQL injection with filter bypass via XML encoding](https://github.com/dhmosfunk/BSCP/tree/main/recommended_labs#lab-sql-injection-with-filter-bypass-via-xml-encoding)
+<br>
+[Blind SQL injection with out-of-band data exfiltration](https://github.com/dhmosfunk/BSCP/tree/main/recommended_labs#lab-blind-sql-injection-with-out-of-band-data-exfiltration)
+
 
 ### PostgreSQL
 #### Time Based
