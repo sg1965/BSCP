@@ -118,7 +118,7 @@ select case when substring(column,1,1)='1' then pg_sleep(5) else pg_sleep(0) end
 
 ### SQLite
 
-## Directory traversal Section
+## Directory Traversal Section
 
 
 
