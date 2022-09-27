@@ -19,6 +19,8 @@
   * [Java](#java)
   * [PHP](#php)
 * [HTTP request smuggling Section](#http-request-smuggling-section)
+* [Information disclosure Section](#information-disclosure-section)
+
 ## Useful Burp extensions (some of them requires burpsuite pro)
 - Hackvertor
 - Copy As Python-Requests
@@ -156,3 +158,6 @@ For more information about payloads and stuff you can find in the ysoserial [off
 ### HTTP request smuggling Section
 For manual exploitation CL.TE TE.CL we can use the [Simple HTTP Smuggler Generator CL.TE TE.CL](https://github.com/dhmosfunk/simple-http-smuggler-generator) 
 
+
+### Information disclosure Section
+Always go for directory brute force and for .files(hidden files) e.g. <b>.git</b>
