@@ -1,6 +1,7 @@
 # <img src="https://icons.iconarchive.com/icons/goescat/macaron/1024/burp-suite-icon.png" width=25> BSCP Methodology
 
 ## Table of Contents
+* [Exam Info](#exam-info)
 * [Useful Burp extensions](#useful-burp-extensions-some-of-them-requires-burpsuite-pro)
 * [Cross-Site Scripting Section](#cross-site-scripting-section)
    * [Bypass restrictions method 1](#bypass-restrictions-method-1)
@@ -20,6 +21,13 @@
   * [PHP](#php)
 * [HTTP request smuggling Section](#http-request-smuggling-section)
 * [Information disclosure Section](#information-disclosure-section)
+
+## Exam Info
+There is always an administrator account with the username "administrator", plus a lower-privileged account usually called "carlos". If you find a username enumeration vulnerability, you may be able to break into a low-privileged account using the following [username](https://portswigger.net/web-security/authentication/auth-lab-usernames) list and [password](https://portswigger.net/web-security/authentication/auth-lab-passwords) list.
+
+Each application has up to one active user, who will be logged in either as a user or an administrator. You can assume that they will visit the homepage of the site every 15 seconds, and click any links in any emails they receive from the application. You can use exploit server's "send to victim" functionality to target them with reflected vulnerabilities.
+
+<b>If you find an SSRF vulnerability, you can use it to read files by accessing an internal-only service, running on localhost on port 6566.</b>
 
 ## Useful Burp extensions (some of them requires burpsuite pro)
 - Hackvertor
