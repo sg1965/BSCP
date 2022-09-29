@@ -67,3 +67,5 @@ Cookie: session=T4wowDw3zijv7BtCJopH8kzeW8ur458c
 
 csrf=OFh9DBRBkec4d8Xmh2rzVGNUZuDZlbH0&postId=5&name=Carlos+Montoya&email=carlos%40normal-user.net&website=https%3A%2F%2Fnormal-user.net&comment=aa
 ```
+
+# [0x6] Lab: Brute-forcing a stay-logged-in cookie
