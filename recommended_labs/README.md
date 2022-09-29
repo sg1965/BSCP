@@ -69,3 +69,14 @@ csrf=OFh9DBRBkec4d8Xmh2rzVGNUZuDZlbH0&postId=5&name=Carlos+Montoya&email=carlos%
 ```
 
 # [0x6] Lab: Brute-forcing a stay-logged-in cookie
+Login in our account `wiener:peter` and enable the option button `Stay logged in`. When successflly login intercept a GET request at `my-account` and a `stay-logged-in` cookie will appear.
+
+Overtake carlos account steps:
+- Send request to Intruder
+- Menu bar => Payloads => Payload Processing
+  - Add Hash:MD5
+  - Add prefix:`carlos:`
+  - Add Encode:Base64-encode
+- Add $$ after = in `stay-logged-in` cookie e.g. `stay-logged-in=$$`
+The last step is bruteforce passwords with these [passwords](https://portswigger.net/web-security/authentication/auth-lab-passwords). DONT FORGET TO LOGOUT FROM WIENER ACCOUNT
+![image](https://user-images.githubusercontent.com/45040001/193135064-b1b6ab39-ce48-4a14-af92-92a3ed7ba26e.png)
