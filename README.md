@@ -23,6 +23,7 @@
 * [Information disclosure Section](#information-disclosure-section)
 
 ## Exam Info
+[BSCP Cheat sheet](https://gist.github.com/dhmosfunk/b5731d149ffc6c2dd4760d666537b4f6) = needs translate <br>
 There is always an administrator account with the username "administrator", plus a lower-privileged account usually called "carlos". If you find a username enumeration vulnerability, you may be able to break into a low-privileged account using the following [username](https://portswigger.net/web-security/authentication/auth-lab-usernames) list and [password](https://portswigger.net/web-security/authentication/auth-lab-passwords) list.
 
 Each application has up to one active user, who will be logged in either as a user or an administrator. You can assume that they will visit the homepage of the site every 15 seconds, and click any links in any emails they receive from the application. You can use exploit server's "send to victim" functionality to target them with reflected vulnerabilities.
