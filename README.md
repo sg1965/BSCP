@@ -29,6 +29,37 @@ Each application has up to one active user, who will be logged in either as a us
 
 <b>If you find an SSRF vulnerability, you can use it to read files by accessing an internal-only service, running on localhost on port 6566.</b>
 
+## 
+
+### Each stage can be cross referenced to the types of vulnerabilities you can observe.
+#### Objective for Stage 1: Get any user access
+
+* SQL Injection
+* Cross-Site Scripting
+* Authentication / Credentials Brute force
+* Request Smuggling
+* Web Cache Poisoning
+
+#### Objective for Stage 2: Get Admin access
+
+* SQL Injection
+* Cross-Site Scripting
+* Cross Site Request Forgery
+* HTTP host header attacks
+* Server-Side Request Forgery
+* Access Control vulnerabilities
+* Authentication / Credentials Brute force
+
+#### Objective for Stage 3: Read Contents of ‘/home/carlos/secret’
+
+* XML External Entities
+* SQL Injection
+* Command Injection
+* Server-Side Template Injection
+* Path Traversal
+* File Upload attacks
+* Insecure Deserialization
+
 ## Useful Burp extensions (some of them requires burpsuite pro)
 - Hackvertor
 - Copy As Python-Requests
