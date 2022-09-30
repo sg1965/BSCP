@@ -29,8 +29,6 @@ Each application has up to one active user, who will be logged in either as a us
 
 <b>If you find an SSRF vulnerability, you can use it to read files by accessing an internal-only service, running on localhost on port 6566.</b>
 
-## 
-
 ### Each stage can be cross referenced to the types of vulnerabilities you can observe.
 #### Objective for Stage 1: Get any user access
 
