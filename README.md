@@ -70,6 +70,7 @@ Each application has up to one active user, who will be logged in either as a us
 - Copy As Python-Requests
 - Java Deserialization Scanner | [ysoserial.jar](https://github.com/frohoff/ysoserial) for manual exploitation<b>(prefer because sometime this extension it doesn't work as it should)</b>
 - HTTP Request Smuggler
+- Param Miner
 
 
 ## Cross-Site Scripting Section
