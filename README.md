@@ -15,6 +15,7 @@
   * [MySQL](#mysql)
   * [Oracle](#oracle)
   * [SQLite](#sqlite)
+* [Command Injection Section](#command-injection-section)
 * [Directory traversal Section](#directory-traversal-section)
 * [CSRF Section](#csrf-section)
 * [Insecure Deserialization Section](#insecure-deserialization-section)
@@ -164,6 +165,9 @@ select case when substring(column,1,1)='1' then pg_sleep(5) else pg_sleep(0) end
 ### Oracle
 
 ### SQLite
+
+## Command Injection Section
+[Link](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Command%20Injection#chaining-commands)
 
 ## Directory Traversal Section
 ```bash
