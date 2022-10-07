@@ -23,6 +23,7 @@
   * [PHP](#php)
 * [HTTP request smuggling Section](#http-request-smuggling-section)
 * [Information disclosure Section](#information-disclosure-section)
+* [Web Cache Poisoning Section](#web-cache-poisoning-section)
 
 ## Exam Info
 [BSCP Cheat sheet](https://gist.github.com/dhmosfunk/b5731d149ffc6c2dd4760d666537b4f6) = needs translate <br>
@@ -202,9 +203,17 @@ For more information about payloads and stuff you can find in the ysoserial [off
 [phpggc](https://github.com/ambionics/phpggc)
 
 
-### HTTP request smuggling Section
+## HTTP request smuggling Section
 For manual exploitation CL.TE TE.CL we can use the [Simple HTTP Smuggler Generator CL.TE TE.CL](https://github.com/dhmosfunk/simple-http-smuggler-generator) 
 
 
-### Information disclosure Section
+## Information disclosure Section
 Always go for directory brute force and for .files(hidden files) e.g. <b>.git</b>
+
+## Web Cache Poisoning Cache
+
+### Web cache poisoning with an unkeyed cookie:
+`fehost="-alert(document.cookies)-"`
+
+### Basic Web cache 
+X-Forwarded-Host header has been used by the application to generate an Open Graph URL inside a meta tag.
