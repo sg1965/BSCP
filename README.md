@@ -16,6 +16,7 @@
   * [Oracle](#oracle)
   * [SQLite](#sqlite)
 * [Directory traversal Section](#directory-traversal-section)
+* [CSRF Section](#csrf-section)
 * [Insecure Deserialization Section](#insecure-deserialization-section)
   * [Java](#java)
   * [PHP](#php)
@@ -172,6 +173,10 @@ select case when substring(column,1,1)='1' then pg_sleep(5) else pg_sleep(0) end
 ../../../etc/passwd%00.png # Null byte bypass 
 images/../../../etc/passwd # Validation of start of path
 ```
+
+## CSRF Section
+
+<img src="https://github.com/swisskyrepo/PayloadsAllTheThings/raw/master/CSRF%20Injection/Images/CSRF-CheatSheet.png?raw=true">
 
 
 ## Insecure Deserialization Section
