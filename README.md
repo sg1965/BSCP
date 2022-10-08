@@ -22,6 +22,7 @@
   * [Java](#java)
   * [PHP](#php)
 * [HTTP request smuggling Section](#http-request-smuggling-section)
+  * [Request Smuggling Via CRLF Injection](#request-smuggling-via-crlf-injection)
 * [Information disclosure Section](#information-disclosure-section)
 * [Web Cache Poisoning Section](#web-cache-poisoning-cache)
   * [Web Cache Poisoning With an Unkeyed Cookie](#web-cache-poisoning-with-an-unkeyed-cookie)
@@ -131,10 +132,9 @@ ${alert(1)}
 
 [SQL Injection cheat sheet PortSwigger](https://portswigger.net/web-security/sql-injection/cheat-sheet)
 <br>
-### Labs
-[SQL injection with filter bypass via XML encoding](https://github.com/dhmosfunk/BSCP/tree/main/recommended_labs#lab-sql-injection-with-filter-bypass-via-xml-encoding)
-<br>
-[Blind SQL injection with out-of-band data exfiltration](https://github.com/dhmosfunk/BSCP/tree/main/recommended_labs#lab-blind-sql-injection-with-out-of-band-data-exfiltration)
+### Useful solved labs:
+* [SQL injection with filter bypass via XML encoding](https://github.com/dhmosfunk/BSCP/tree/main/recommended_labs#lab-sql-injection-with-filter-bypass-via-xml-encoding)
+* [Blind SQL injection with out-of-band data exfiltration](https://github.com/dhmosfunk/BSCP/tree/main/recommended_labs#lab-blind-sql-injection-with-out-of-band-data-exfiltration)
 
 
 ### PostgreSQL
@@ -208,7 +208,24 @@ For more information about payloads and stuff you can find in the ysoserial [off
 
 
 ## HTTP request smuggling Section
+### Useful solved labs:
+* [Capture other users request via HTTP Request Smuggling](https://github.com/dhmosfunk/BSCP/tree/main/recommended_labs#0x5-lab-exploiting-http-request-smuggling-to-capture-other-users-requests)
+
 For manual exploitation CL.TE TE.CL we can use the [Simple HTTP Smuggler Generator CL.TE TE.CL](https://github.com/dhmosfunk/simple-http-smuggler-generator) 
+
+### Request smuggling via CRLF injection
+
+Add a `foo` header and from `inspector` change the value of `foo` header like below
+```
+HTTP/2
+
+foo:bar\r\nTransfer-Encoding: chunked
+```
+After applying the `Transfer-Encoding` header the request will be `kettled` so you cant see other headers, you can only append content to body like below
+You request has to look like below
+![image](https://user-images.githubusercontent.com/45040001/194731138-30e61723-6f32-4800-863a-cd4fcba39ed7.png)
+
+
 
 
 ## Information disclosure Section
