@@ -136,7 +136,7 @@ ${alert(1)}
 <br>
 ### Useful solved labs:
 * [SQL injection with filter bypass via XML encoding](https://github.com/dhmosfunk/BSCP/tree/main/recommended_labs#lab-sql-injection-with-filter-bypass-via-xml-encoding)
-* [Blind SQL injection with out-of-band data exfiltration](https://github.com/dhmosfunk/BSCP/tree/main/recommended_labs#lab-blind-sql-injection-with-out-of-band-data-exfiltration)
+* [Blind SQL injection with out-of-band data exfiltration](https://github.com/dhmosfunk/BSCP/tree/main/recommended_labs#0x2-lab-blind-sql-injection-with-out-of-band-data-exfiltration)
 
 
 ### PostgreSQL
