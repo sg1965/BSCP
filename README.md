@@ -30,6 +30,7 @@
   * [Web Cache Poisoning With an Unkeyed Cookie](#web-cache-poisoning-with-an-unkeyed-cookie)
   * [Basic Web cache poisoning](#basic-web-cache)
   * [Targeted web cache poisoning using an unknown header](#targeted-web-cache-poisoning-using-an-unknown-header)
+  * [Parameter Cloaking](#parameter-cloaking)
 
 ## Exam Info
 [BSCP Cheat sheet](https://gist.github.com/dhmosfunk/b5731d149ffc6c2dd4760d666537b4f6) = needs translate <br>
