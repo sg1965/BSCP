@@ -80,3 +80,8 @@ Overtake carlos account steps:
 - Add $$ after = in `stay-logged-in` cookie e.g. `stay-logged-in=$$`
 The last step is bruteforce passwords with these [passwords](https://portswigger.net/web-security/authentication/auth-lab-passwords). DONT FORGET TO LOGOUT FROM WIENER ACCOUNT
 ![image](https://user-images.githubusercontent.com/45040001/193135064-b1b6ab39-ce48-4a14-af92-92a3ed7ba26e.png)
+
+# [0x7] Email Reset User Takeover
+Go to 'Forgot you password?' functionality, if you can put a name instead of email put 'carlos' username and intercept the post request.
+For the next step we have to open the exploit server and copy the exploit server host, insert 'X-Forwarded-Host' header with exploit server host for value and forward the request.
+Our last step is to open the http logs from exploit server and take the reset link with new password functionality
