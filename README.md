@@ -312,6 +312,8 @@ GET /admin HTTP/1.1
 Always go for directory brute force and for .files(hidden files) e.g. <b>.git</b>
 
 ## Web Cache Poisoning Cache
+Useful tip for web cache poisoning is to use the `paraminer` burp exension.
+
 
 ### Web cache poisoning with an unkeyed cookie:
 `fehost="-alert(document.cookies)-"`
@@ -334,3 +336,6 @@ and final step is to poison the victims user-agents stoled from img tag
 
 ### Parameter cloaking
 `GET /js/geolocate.js?callback=setCountryCookie&utm_content=foo;callback=alert(1)`
+
+### X-Forwarded-Scheme web cache poisoning method
+![image](https://user-images.githubusercontent.com/45040001/198842791-c04aa06e-2818-435a-8556-9b0e57c2ca7f.png)
