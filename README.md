@@ -200,6 +200,9 @@ images/../../../etc/passwd # Validation of start of path
 
 ## CSRF Section
 
+### Referer validation depends on header being present
+`<meta name="referrer" content="no-referrer">`
+
 ### CSRF with broken Referer validation
 ```
 HTTP/1.1 200 OK
