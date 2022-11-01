@@ -86,7 +86,7 @@ Go to 'Forgot you password?' functionality, if you can put a name instead of ema
 For the next step we have to open the exploit server and copy the exploit server host, insert 'X-Forwarded-Host' header with exploit server host for value and forward the request.
 Our last step is to open the http logs from exploit server and take the reset link with new password functionality
 
-# [0x8] onpopstate XSS cookie retrieve 
+# [0x8] onpopstate event XSS cookie retrieve 
 You have to encode the payload with hackvertor extension.
 Ps. Don't forget the ``` ` ``` quote after onpopstate=document.location=<HERE QUOTES> 
 ```
