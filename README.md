@@ -322,6 +322,8 @@ Host: 0aab009204d51605c0a31134007c0017.web-security-academy.net\r\n
 \r\n
 GET /admin HTTP/1.1
 ```
+Send requests repeatedly until you get 302 redirect to /my-account with the session cookie of the administrator.
+
 
 ## XML external entity (XXE) injection Section
 
