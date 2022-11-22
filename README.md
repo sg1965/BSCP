@@ -22,7 +22,7 @@
 * [Insecure Deserialization Section](#insecure-deserialization-section)
   * [Java](#java)
   * [PHP](#php)
-    * [Simple Modifying of PHP serialized object](#simple-modifying-of-php-serialize-object)
+    * [Simple Modifying of PHP serialized object](#simple-modifying-of-php-serialized-object)
 * [HTTP request smuggling Section](#http-request-smuggling-section)
   * [Response Queue Poisoning via H2.TE Request Smuggling](#response-queue-poisoning-via-h2te-request-smuggling)
   * [Request Smuggling via CRLF Injection](#request-smuggling-via-crlf-injection)
@@ -254,7 +254,7 @@ For more information about payloads and stuff you can find in the ysoserial [off
 
 ### PHP
 
-### Simple modifying of PHP serialize object
+### Simple modifying of PHP serialized object
 ```
 Tzo0OiJVc2VyIjoyOntzOjg6InVzZXJuYW1lIjtzOjY6IndpZW5lciI7czo1OiJhZG1pbiI7YjowO30=
 
