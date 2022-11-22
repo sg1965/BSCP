@@ -22,6 +22,7 @@
 * [Insecure Deserialization Section](#insecure-deserialization-section)
   * [Java](#java)
   * [PHP](#php)
+    * [Simple Modifying of PHP serialized object](#simple-modifying-of-php-serialize-object)
 * [HTTP request smuggling Section](#http-request-smuggling-section)
   * [Response Queue Poisoning via H2.TE Request Smuggling](#response-queue-poisoning-via-h2te-request-smuggling)
   * [Request Smuggling via CRLF Injection](#request-smuggling-via-crlf-injection)
