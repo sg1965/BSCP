@@ -252,6 +252,15 @@ java -jar ysoseriar.jar <PAYLOAD> 'COMMAND' | encoding
 For more information about payloads and stuff you can find in the ysoserial [official repository](https://github.com/frohoff/ysoserial)
 
 ### PHP
+
+#### Simple modifying of PHP serialize object
+```
+Tzo0OiJVc2VyIjoyOntzOjg6InVzZXJuYW1lIjtzOjY6IndpZW5lciI7czo1OiJhZG1pbiI7YjowO30=
+
+Base64 decoded
+O:4:"User":2:{s:8:"username";s:6:"wiener";s:5:"admin";b:0;}
+```
+
 [phpggc](https://github.com/ambionics/phpggc)
 
 
