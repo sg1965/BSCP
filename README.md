@@ -254,7 +254,7 @@ For more information about payloads and stuff you can find in the ysoserial [off
 
 ### PHP
 
-#### Simple modifying of PHP serialize object
+### Simple modifying of PHP serialize object
 ```
 Tzo0OiJVc2VyIjoyOntzOjg6InVzZXJuYW1lIjtzOjY6IndpZW5lciI7czo1OiJhZG1pbiI7YjowO30=
 
